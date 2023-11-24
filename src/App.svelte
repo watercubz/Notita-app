@@ -11,9 +11,9 @@
   let notes = [
     {
       id: 0,
-      title: "Hi, soy watercubz",
+      title: "Bienvenido a Notita ❤️",
       color: "yellow",
-      text: "Bienvenido a Notita ❤️",
+      text: "Create with 💜 by watercubz",
     },
   ];
   let copyNotes = [...notes];

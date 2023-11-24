@@ -1,9 +1,9 @@
 <script>
   import { darkmode } from "../store/store";
 
-  function handleClick() {
-    darkmode.update((darkmode) => !darkmode);
-  }
+  // function handleClick() {
+  //   darkmode.update((darkmode) => !darkmode);
+  // }
 
   function toggle() {
     window.document.body.classList.toggle("dark-mode");
