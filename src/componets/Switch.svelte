@@ -4,11 +4,15 @@
   function handleClick() {
     darkmode.update((darkmode) => !darkmode);
   }
+
+  function toggle() {
+    window.document.body.classList.toggle("dark-mode");
+  }
 </script>
 
 <div class="Switch">
   <div class="switch-container">
-    <button class="circle" on:click={handleClick}></button>
+    <button class="circle" on:click={toggle}></button>
   </div>
 </div>
 
@@ -27,6 +31,18 @@
     border-radius: 50%;
     transition: all 0.2s;
     border: none;
+  }
+  button {
+    background-color: #f76027;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+  }
+  :global(body.dark-mode) button {
+    background-color: #0084f6;
+    color: white;
   }
   @media (max-width: 600px) {
     .Switch {
