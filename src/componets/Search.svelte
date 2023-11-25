@@ -15,7 +15,7 @@
     color: #333;
     border: 1px solid #ccc;
     border-radius: 0.375rem;
-    background-color: #f8f8f8;
+    background-color: #f2eee2;
     outline: none;
     transition:
       border-color 0.15s ease-in-out,
