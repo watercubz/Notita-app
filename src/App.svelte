@@ -11,14 +11,20 @@
   let notes = [
     {
       id: 0,
-      title: "Bienvenido a Notita ❤️",
-      color: "yellow",
-      text: "Create with 💜 by watercubz",
+      title: "HOLA 🚀",
+      color: "#FFA500",
+      text: "Bienvenido a Notita ❤️",
+    },
+    {
+      id: 1,
+      title: "<Watercubz/>",
+      color: "white",
+      text: "create with 💜 by watercubz",
     },
   ];
   let copyNotes = [...notes];
 
-  $: count = notes.length;
+  $: NoteCount = notes.length;
 
   function handleNew() {
     const color = generateColor();
@@ -91,7 +97,7 @@
 
 <main>
   <Header on:input={handleSearch} />
-  <div class="count-notes">{count} notas</div>
+  <div class="count-notes">{NoteCount} notas</div>
   <Dashboard
     bind:notes={copyNotes}
     on:click={handleNew}

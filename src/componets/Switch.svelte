@@ -64,8 +64,15 @@
     }
 
     .switch-container .circle {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     }
   }
 </style>
